@@ -1,1 +1,148 @@
-"Enter your styles here"
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f7fb;
+  color: #25283b;
+}
+
+header {
+  text-align: center;
+  padding: 65px 20px 45px;
+  background: linear-gradient(135deg, #e8e5ff, #fce8f4);
+}
+
+.subtitle {
+  color: #8064c9;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.description {
+  color: #77798b;
+  font-size: 15px;
+}
+
+main {
+  max-width: 1150px;
+  margin: 45px auto;
+  padding: 0 25px;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.gallery-info h2 {
+  font-size: 22px;
+}
+
+.gallery-info p {
+  color: #77798b;
+  font-size: 14px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+.message {
+  text-align: center;
+  color: #8064c9;
+  margin: 20px 0;
+}
+
+.message:empty {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.buttons button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #8064c9;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  background: #694bab;
+}
+
+#clearGallery {
+  background: #e87891;
+}
+
+#clearGallery:hover {
+  background: #d75c77;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #9293a3;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-info {
+    display: block;
+    text-align: center;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}

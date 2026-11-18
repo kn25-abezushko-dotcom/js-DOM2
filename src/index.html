@@ -1,25 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Галерея фотографій</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя фотогалерея</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>FOTO IMAGE LIST</h1>
-    </header>
-    <main>
-        <div id="gallery" class="gallery"></div>
-        <div class="buttons">
-            <button id="loadMore">Завантажити ще 4 картинки</button>
-            <button id="clearGallery">Очистити галерею</button>
-            <button id="removeLast">Видалити останню картинку</button>
-            <button id="reverseGallery">Перевернути галерею</button>
-            <button id="shuffleGallery">Перемішати галерею</button>
-        </div>
-    </main>
-    <script src="script.js"></script>
+
+  <header>
+    <p class="subtitle">PHOTO COLLECTION</p>
+    <h1>Моя фотогалерея</h1>
+    <p class="description">
+      Колекція красивих фотографій з усього світу
+    </p>
+  </header>
+
+  <main>
+    <div class="gallery-info">
+      <h2>Колекція фотографій</h2>
+      <p>Кількість фото: <span id="photoCount">0</span></p>
+    </div>
+
+    <div id="gallery" class="gallery"></div>
+
+    <p id="message" class="message"></p>
+
+    <div class="buttons">
+      <button id="loadMore">+ Завантажити ще 4</button>
+      <button id="removeLast">Видалити останню</button>
+      <button id="reverseGallery">Перевернути галерею</button>
+      <button id="clearGallery">Очистити галерею</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Фотографії з Picsum Photos</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
